@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Application Info</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <h1>Saved Information</h1>
+
+    <div class="category">
+        <h2><em>Work Experience</em></h2>
+        <table id="work-exp-table">
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Employer</th>
+                    <th>Dates Worked</th>
+                    <th>Location</th>
+                    <th>Job Description</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="jtitle1"></th>
+                    <td id="jemployer1"></th>
+                    <td id="jdates1"></th>
+                    <td id="jlocation1"></th>
+                    <td id="jdescrip1"></th>
+                    <td id="buttons">
+                        <button id="edit" onclick="editJob()">Edit</button>
+                        <button id="save" style="display: none;" onclick="saveJob()">Save</button>
+                        <button id="delete">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="add-job-button" id="add-job-button" onclick="displayAddJob()">Add Job</button>
+        <div class="add-job" id="add-job" style="display: none;">
+            <label for="jtitle">Job Title: </label>
+            <input type="text" id="jtitle"><br><br>
+
+            <label for="jemployer">Employer Name: </label>
+            <input type="text" id="jemployer"><br><br>
+
+            <label for="jstart">Start Date: </label>
+            <input type="text" id="jstart"><br><br>
+
+            <label for="jend">End Date: </label>
+            <input type="text" id="jend"><br><br>
+
+            <label for="jlocation">Location: </label>
+            <input type="text" id="jlocation"><br><br>
+
+            <label for="jdescrip">Job Description: </label>
+            <textarea id="jdescrip"></textarea><br><br>
+
+            <button onclick="addJob()">Add New Job</button>
+            <button onclick="cancelJob()">Cancel</button>
+        </div>
+    </div>
+
+    <button class="add">Add Info Category</button>
+</body>
+
+<script src="script.js"></script>
+</html>

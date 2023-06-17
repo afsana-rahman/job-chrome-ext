@@ -1,0 +1,11 @@
+{
+    "name": "Job Application Data Tracker",
+    "version": "1.0.0",
+    "description": "Data repository for redundant job application info",
+    "manifest_version": 3,
+    "author": "Afsana Rahman",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Stored Info"
+    }
+}
