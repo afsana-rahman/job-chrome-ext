@@ -4,7 +4,6 @@ A Google Chrome extension that stores resume info. Makes the job application pro
 NOTE: Work In Progress. Publishing to demonstrate proficiency in HTML/CSS/Javascript stack.
 
 ## SHORT-TERM GOALS:
-- Finish edit and save functions.
 - Write functions for adding a category.
 - Create hover functions that copy text to clipboard.
 
